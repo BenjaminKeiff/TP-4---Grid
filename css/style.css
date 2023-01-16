@@ -1,10 +1,4 @@
-.exoGrid {
-    background-color: gold;
-    color: white;
-    font-size: 48px;
-    text-align: center;
-    font-weight: bold;
-  }
+/* ## Je défini la taille, le display, le template et les couleurs de fond de mon tableau ## */
 
 #grid {
     height: 700px;
@@ -13,8 +7,11 @@
     grid-template: repeat(14, 1fr) / repeat(20, 1fr);
     grid-gap: 10px;
     background-color: #030303;
+    border:10px solid #030303;
   }
   
+/* ## Et maintenant j'attribue a chacune des div leurs tailles et dans quel sens elles doivent
+      s'étendre grace à grid row et grid column et grace au span ## */
   #div1 {
     grid-row: span 3;
     background-color: #e5e5e5;
@@ -176,6 +173,8 @@
     background-color: #c20101;
 }
 
+/* ## Suite a un oublie j'ai du positionné manuelement cette div ainsi que la div 34 à la fin ##  */
+
 #div30 {
     grid-area: 10 / 2 / 14 / 5;
     background-color: #c20101;
@@ -203,142 +202,39 @@
     background-color: #efbd0e;
 }
 
-#div36 {
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #111111;
+}
+footer p {
+    text-align: right;
+    margin-right: 55px;
 
 }
-
-#div37 {
-
+button {
+    text-decoration: none;
+    color: whitesmoke;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    z-index: 10;
+    background-color: #111111;
 }
 
-#div38 {
-
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
 }
-
-#div39 {
-
-}
-
-#div40 {
-
-}
-
-#div41 {
-
-}
-
-#div42 {
-
-}
-
-#div43 {
-
-}
-
-#div44 {
-
-}
-
-#div45 {
-
-}
-
-#div46 {
-
-}
-
-#div47 {
-
-}
-
-#div48 {
-
-}
-
-#div49 {
-
-}
-
-#div50 {
-
-}
-
-#div51 {
-
-}
-
-#div52 {
-
-}
-
-#div53 {
-
-}
-
-#div54 {
-
-}
-
-#div55 {
-
-}
-
-#div56 {
-
-}
-
-#div57 {
-
-}
-
-#div58 {
-
-}
-
-#div59 {
-
-}
-
-#div60 {
-
-}
-
-#div61 {
-
-}
-
-#div62 {
-
-}
-
-#div63 {
-
-}
-
-#div64 {
-
-}
-
-#div65 {
-
-}
-
-#div66 {
-
-}
-
-#div67 {
-
-}
-
-#div68 {
-
-}
-
-#div69 {
-
-}
-
-#div70 {
-
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
 }

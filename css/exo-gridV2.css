@@ -1,10 +1,4 @@
-.exoGrid {
-    background-color: gold;
-    color: white;
-    font-size: 48px;
-    text-align: center;
-    font-weight: bold;
-  }
+/* ## Je défini la taille, le display, le template et les couleurs de fond de mon tableau ## */
 
 #grid {
     height: 700px;
@@ -13,8 +7,11 @@
     grid-template: repeat(14, 1fr) / repeat(20, 1fr);
     grid-gap: 10px;
     background-color: #030303;
+    border:10px solid #030303;
   }
-  
+
+/* ## Maintenant j'attribue une position ou plusieurs position a chaque div afin de composer mon tableau grace a grid-area ## */
+
 #div1 {
     grid-area: 1 / 1 / 4 / 1;
     background-color: #e5e5e5;
@@ -183,4 +180,41 @@
 #div34 {
     grid-area: 10 / 19 / 13 / 21;
     background-color: #e5e5e5;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #111111;
+}
+footer p {
+    text-align: right;
+    margin-right: 55px;
+
+}
+button {
+    text-decoration: none;
+    color: whitesmoke;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    z-index: 10;
+    background-color: #111111;
+}
+
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
 }
